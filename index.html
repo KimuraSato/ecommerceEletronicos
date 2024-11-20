@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Eletrônica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Loja Eletrônica</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Produtos</a>
+      <a href="#">Carrinho (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <div class="product" data-id="1">
+        <img src="image.png" alt="Smartphone X10">
+        <h2>Smartphone X10</h2>
+        <p>R$ 2.499,00</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product" data-id="2">
+        <img src="shopping.webp" alt="Fone de Ouvido Pro">
+        <h2>Fone de Ouvido Pro</h2>
+        <p>R$ 599,00</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product" data-id="3">
+        <img src="imag.webp" alt="Notebook Gamer G7">
+        <h2>Notebook Gamer G7</h2>
+        <p>R$ 5.999,00</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </section>
+
+    <!-- Carrinho de Compras -->
+    <section class="cart" id="cart">
+      <h2>Carrinho</h2>
+      <div id="cart-items"></div>
+      <div id="cart-total">
+        <p>Total: R$ <span id="total-price">0,00</span></p>
+      </div>
+      <button id="checkout-btn">Finalizar Compra</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Loja Eletrônica | Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
